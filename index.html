@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/script.js"></script>
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <title>Landing Page</title>
+</head>
+<body>
+    <header>
+        <img src="assets/revo.png" alt="logo" class="logo">
+        <div class="navbar">
+            <a href="#home">Home</a>
+            <a href="#our-package">Our Package</a>
+            <a href="#">Call Us</a>
+        </div>
+    </header>
+    <div id="home">
+        <h1>Top Rated E-Groceries Shop in Indonesian</h1>
+        <h2>Every Day with best ingredients</h2>
+        <div class="flex-container">
+            <div>
+                <div class="gambar">
+                    <img src="assets/image_1.jpg">
+                    <p style="font-style: italic;font-size: 20px;text-align: center;font-weight: 100;color: #252525;">"setiap hari beli sayur sayur yang fresh disini"</p>
+                </div>
+                <div class="deskripsi">
+                    <p>
+                        Menawarkan berbagai macam alat dan bahan masakan dengan kualitas yang terbaik dengan keuntungan :
+                    </p>
+                    <ol>
+                        <li>Harga bahan yang murah dengan kualitas yang terbaik </li>
+                        <li>Peralatan masak yang lengkap dengan kualitas tinggi</li>
+                        <li>Pemesanan yang mudah dan dapat dilakukan dimana saja</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="contact">
+                <p style="font-weight: 900; margin: 20px 0px;">Contact Us</p>
+                <p>Sales akan menguhubungi dalam waktu 1x24 jam setelah data kami terima</p>
+                <form name="contact" onsubmit="return validateForm()">
+                    <label for="name">Your Name</label><br>
+                    <input type="text" id="name" placeholder="First and Last Name">
+                    <label for="email">Email Address</label><br>
+                    <input type="text" id="email" placeholder="example@email.com"   >
+                    <label for="interest">What are you interested in? </label><br>
+                    <select name="interest" id="interest" aria-placeholder="Select Option">
+                        <option value="ingredients">Ingredients</option>
+                        <option value="kitchen-set">Kitchen Set</option>
+                    </select>
+                    <input type="submit" value="submit">              
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="our-package" id="our-package">
+        <h1>Our Package</h1>
+    </div>
+    <div class="package">
+        <div class="package-satu">
+            <img src="assets/carrot-solid.svg">
+            <h2>Fresh Vegatable</h2>
+            <div>Sayuran segar langsung dari sumber pertanian terbaik
+            </div>
+        </div>
+        <div class="package-dua">
+            <img src="assets/apple-alt-solid.svg">
+            <h2>Fresh Fruit</h2>
+            <div>
+                Buah dengan kualitas terbaik dari local dan import dan harga yang menarik
+            </div>
+        </div>
+        <div class="package-tiga">
+            <img src="assets/truck-solid.svg">
+            <h2>Instant Delivery</h2>
+            <div>
+                Di kirim instan oleh kuriryang telahdi training dengan SOP untuk menjaga kondisi belanja kamu
+            </div>
+        </div>
+        <div class="package-satu">
+            <img src="assets/mortar-pestle-solid.svg">
+            <h2>Kitchen Ingredient</h2>
+            <div>
+                Bumbu dapur lengkap untuk keperluan memasak kamu
+            </div>
+        </div>
+        <div class="package-dua">
+            <img src="assets/kitchen-set-solid.svg">
+            <h2>Kitchen Set</h2>
+            <div>
+                Segala jenis alat masak untuk membantu kamu memasak
+            </div>
+        </div>
+        <div class="package-tiga">
+            <img src="assets/bowl-food-solid.svg">
+            <h2>Bunding Set</h2>
+            <div>
+                Binggung masak apa? sudah tersedia paket untuk kamu masak di dapur mu
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            Bersama E-Groceries hidup sehat dan berkualitas menjadi lebih mudah
+        </div>
+        <button onclick="openNav()">About Me</button>
+        <div id="footer" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <img src="assets/user-solid.svg" class="about-me">
+                <p>Hello, My Name is Muhammad Nirwansyah From Papua and this is my first Landing Page</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
